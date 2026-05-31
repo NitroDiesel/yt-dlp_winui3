@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
 <div align="center">
 
@@ -2491,3 +2492,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md#contributing-to-yt-dlp) for instructions o
 
 # WIKI
 See the [Wiki](https://github.com/yt-dlp/yt-dlp/wiki) for more information
+=======
+# yt-dlp_winui3
+YT-DLP but with WinUI 3
+>>>>>>> 6d6a1f85e81d28e009fdf96a602d3f0d26b51ac9
