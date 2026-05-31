@@ -1,0 +1,12 @@
+MSBuild version 18.4.0+6e61e96ac for .NET Framework
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  YtDlpGUI.Core -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Core\bin\Release\net8.0\YtDlpGUI.Core.dll
+  YtDlpGUI.Infrastructure -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Infrastructure\bin\Release\net8.0\YtDlpGUI.Infrastructure.dll
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(210,13): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(229,28): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(246,26): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(357,13): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(375,28): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(400,26): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]

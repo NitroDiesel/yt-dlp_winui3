@@ -1,0 +1,183 @@
+<ContentDialog
+    x:Class="YtDlpGUI.Views.AddDownloadDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    MaxWidth="760"
+    MinWidth="500"
+    DefaultButton="Primary"
+    PrimaryButtonText="Add Download"
+    PrimaryButtonStyle="{StaticResource PrimaryActionButtonStyle}"
+    SecondaryButtonText="Cancel"
+    SecondaryButtonStyle="{StaticResource DialogSecondaryActionButtonStyle}"
+    PrimaryButtonClick="OnPrimaryButtonClick"
+    Loaded="OnDialogLoaded"
+    Title="Add Download">
+    <ScrollViewer MaxHeight="560" Padding="0,0,8,0">
+        <StackPanel Spacing="12">
+            <TextBlock Text="Video or playlist URLs (one per line)" />
+            <TextBox
+                AcceptsReturn="True"
+                Height="110"
+                PlaceholderText="Paste one or many URLs..."
+                Text="{Binding UrlsText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                TextWrapping="Wrap" />
+
+            <Grid ColumnSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Header="Output folder" Text="{Binding OutputDirectory, Mode=TwoWay}" />
+                <Button
+                    Grid.Column="1"
+                    VerticalAlignment="Bottom"
+                    Command="{Binding BrowseOutputFolderCommand}"
+                    Content="Browse" />
+            </Grid>
+
+            <TextBox Header="Filename template" Text="{Binding OutputTemplate, Mode=TwoWay}" />
+
+            <Grid ColumnSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ComboBox
+                    Grid.Column="0"
+                    Header="Mode"
+                    ItemsSource="{Binding DownloadModes}"
+                    SelectedItem="{Binding SelectedMode, Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Converter={StaticResource EnumDisplayNameConverter}}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <ComboBox
+                    Grid.Column="1"
+                    Header="{Binding QualityLabel}"
+                    ItemsSource="{Binding QualityOptions}"
+                    SelectedItem="{Binding SelectedQualityOption, Mode=TwoWay}" />
+                <ComboBox
+                    Grid.Column="2"
+                    Header="{Binding FormatLabel}"
+                    ItemsSource="{Binding FormatOptions}"
+                    SelectedItem="{Binding AudioFormat, Mode=TwoWay}" />
+            </Grid>
+
+            <Border
+                Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="10"
+                Padding="12">
+                <StackPanel Spacing="8">
+                    <TextBlock FontWeight="SemiBold" Text="Custom video quality" />
+                    <TextBlock
+                        Opacity="0.75"
+                        Text="These fields are only applied when Quality is set to Custom. Leave them blank for Best, Up To 1080p, or Up To 720p."
+                        TextWrapping="Wrap" />
+                    <TextBox
+                        Header="Custom format selector (-f)"
+                        PlaceholderText="Example: bv*[height&lt;=1080]+ba/b"
+                        Text="{Binding CustomFormat, Mode=TwoWay}" />
+                    <TextBox
+                        Header="Format sort (-S)"
+                        PlaceholderText="Example: res:1080,fps,hdr:12"
+                        Text="{Binding FormatSort, Mode=TwoWay}" />
+                </StackPanel>
+            </Border>
+
+            <Expander Header="Advanced options" IsExpanded="{Binding ShowAdvanced, Mode=TwoWay}">
+                <StackPanel Margin="0,10,0,0" Spacing="10">
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <NumberBox
+                            Grid.Column="0"
+                            Header="Retries"
+                            Minimum="0"
+                            SpinButtonPlacementMode="Inline"
+                            Value="{Binding Retries, Mode=TwoWay}" />
+                        <TextBox Grid.Column="1" Header="Proxy URL" Text="{Binding ProxyUrl, Mode=TwoWay}" />
+                    </Grid>
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0" Header="User-Agent" Text="{Binding UserAgent, Mode=TwoWay}" />
+                        <TextBox Grid.Column="1" Header="Referer" Text="{Binding Referer, Mode=TwoWay}" />
+                    </Grid>
+
+                    <ToggleSwitch
+                        Header="Use cookies file"
+                        IsOn="{Binding UseCookiesFile, Mode=TwoWay}" />
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox
+                            Grid.Column="0"
+                            IsEnabled="{Binding UseCookiesFile}"
+                            PlaceholderText="Path to cookies file"
+                            Text="{Binding CookiesFilePath, Mode=TwoWay}" />
+                        <Button
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            Command="{Binding BrowseCookiesFileCommand}"
+                            Content="Browse"
+                            IsEnabled="{Binding UseCookiesFile}" />
+                    </Grid>
+
+                    <ToggleSwitch
+                        Header="Use browser cookies"
+                        IsOn="{Binding UseCookiesFromBrowser, Mode=TwoWay}" />
+                    <TextBox
+                        IsEnabled="{Binding UseCookiesFromBrowser}"
+                        PlaceholderText="e.g. chrome, edge:Profile 1"
+                        Text="{Binding CookiesFromBrowser, Mode=TwoWay}" />
+
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ToggleSwitch
+                            Grid.Column="0"
+                            Header="Download subtitles"
+                            IsOn="{Binding DownloadSubtitles, Mode=TwoWay}" />
+                        <ToggleSwitch
+                            Grid.Column="1"
+                            Header="Embed subtitles"
+                            IsOn="{Binding EmbedSubtitles, Mode=TwoWay}" />
+                        <ToggleSwitch
+                            Grid.Column="2"
+                            Header="Embed metadata"
+                            IsOn="{Binding EmbedMetadata, Mode=TwoWay}" />
+                    </Grid>
+                    <ToggleSwitch
+                        Header="Embed thumbnail"
+                        IsOn="{Binding EmbedThumbnail, Mode=TwoWay}" />
+                </StackPanel>
+            </Expander>
+
+            <CheckBox Content="Start queue immediately after adding" IsChecked="{Binding StartImmediately, Mode=TwoWay}" />
+
+            <TextBlock
+                Foreground="{ThemeResource SystemFillColorCriticalBrush}"
+                Text="{Binding ValidationMessage}"
+                TextWrapping="Wrap" />
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

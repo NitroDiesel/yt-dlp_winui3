@@ -1,0 +1,8 @@
+MSBuild version 18.4.0+6e61e96ac for .NET Framework
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  YtDlpGUI.Core -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Core\bin\Release\net8.0\YtDlpGUI.Core.dll
+  YtDlpGUI.Infrastructure -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Infrastructure\bin\Release\net8.0\YtDlpGUI.Infrastructure.dll
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\Views\AddDownloadDialog.xaml : Xaml Xml Parsing Error error WMC9997: '<', hexadecimal value 0x3C, is an invalid attribute character. Line 88, position 61. [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\Views\QuickDownloadPage.xaml : Xaml Xml Parsing Error error WMC9997: '<', hexadecimal value 0x3C, is an invalid attribute character. Line 68, position 69. [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]

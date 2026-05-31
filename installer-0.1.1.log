@@ -1,0 +1,755 @@
+Repository root: D:\Coding 2.0\yt-dlp-master
+Building version: 0.1.1
+Runtime: win-x64
+Running: dotnet publish D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false -p:PublishReadyToRun=true -p:PublishTrimmed=false -p:WindowsAppSDKSelfContained=true -p:Version=0.1.1 -o D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64
+  Determining projects to restore...
+  Restored D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Core\YtDlpGUI.Core.csproj (in 227 ms).
+  Restored D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Infrastructure\YtDlpGUI.Infrastructure.csproj (in 233 ms).
+  Restored D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj (in 397 ms).
+  YtDlpGUI.Core -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Core\bin\Release\net8.0\YtDlpGUI.Core.dll
+  YtDlpGUI.Infrastructure -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Infrastructure\bin\Release\net8.0\YtDlpGUI.Infrastructure.dll
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\ViewModelBase.cs(8,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.ViewModelBase.statusMessage using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\ShellViewModel.cs(10,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.ShellViewModel.selectedTag using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryViewModel.cs(47,40): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryViewModel.selectedEntry using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(9,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.jobId using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(12,28): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.completedAtUtc using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(15,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.completedAtText using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\QueueViewModel.cs(47,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.QueueViewModel.isQueueRunning using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(13,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.url using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(18,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.status using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(16,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.title using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(21,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.url using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(24,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.title using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\QueueViewModel.cs(44,39): warning MVVMTK0045: The field YtDlpGUI.ViewModels.QueueViewModel.selectedJob using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(19,29): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.status using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(27,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.outputPath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(30,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.errorMessage using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(22,17): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.attempt using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(33,17): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.attempts using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(25,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.progressPercent using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\HistoryEntryItemViewModel.cs(36,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.HistoryEntryItemViewModel.commandPreview using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(28,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.speed using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(31,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.eta using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(34,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.outputPath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(37,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.lastError using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(40,28): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.createdAtUtc using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(43,29): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.startedAtUtc using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadJobItemViewModel.cs(46,29): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadJobItemViewModel.finishedAtUtc using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(63,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.urlsText using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(66,26): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.selectedMode using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(72,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.selectedQualityOption using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(69,27): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.selectedQuality using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(75,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.audioFormat using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(78,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.audioQuality using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(81,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.customFormat using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(84,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.formatSort using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(87,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.outputDirectory using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(90,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.outputTemplate using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(93,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.showAdvanced using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(96,17): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.retries using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(99,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.proxyUrl using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(102,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.userAgent using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(105,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.referer using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(108,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.useCookiesFile using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(111,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.cookiesFilePath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(114,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.useCookiesFromBrowser using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(117,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.cookiesFromBrowser using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(120,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.downloadSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(123,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.embedSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(126,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.embedMetadata using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(129,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.embedThumbnail using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(132,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.startImmediately using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(135,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.AddDownloadDialogViewModel.validationMessage using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(45,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.usePythonModule using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(54,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.ffmpegLocation using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(57,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultOutputDirectory using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(51,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.pythonExecutablePath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(60,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultOutputTemplate using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(63,26): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultDownloadMode using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(48,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.ytDlpExecutablePath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(66,27): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultQualityPreset using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(69,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultDownloadSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(72,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultDownloadAutoSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(75,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultEmbedSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(78,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultEmbedMetadata using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(81,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultEmbedThumbnail using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(84,17): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultRetries using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(87,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultRateLimit using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(90,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultProxy using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(93,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultUserAgent using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(96,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultReferer using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(99,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultExtraArguments using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(102,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultUseDownloadArchive using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(105,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultDownloadArchivePath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(108,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultUseCookiesFromBrowser using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(111,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultCookiesFromBrowser using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(114,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultUseCookiesFile using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(117,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.defaultCookiesFilePath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(120,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.autoStartQueue using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(123,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.autoFillAddDialogFromClipboard using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(126,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.startQueueAfterAddDialogSubmit using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\SettingsViewModel.cs(129,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.SettingsViewModel.verboseLogging using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(71,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.url using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(77,27): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.selectedQuality using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(80,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.selectedQualityOption using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(83,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.customFormat using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(86,26): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.selectedPlaylistMode using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(89,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.downloadSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(92,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.downloadAutoSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(95,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.embedSubtitles using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(98,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.subtitleLanguages using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(74,26): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.selectedMode using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(101,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.subtitleFormat using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(104,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.embedMetadata using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(107,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.embedThumbnail using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(110,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.embedChapters using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(113,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.audioFormat using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(116,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.audioQuality using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(119,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.outputDirectory using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(122,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.outputTemplate using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(125,17): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.retries using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(128,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.rateLimit using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(131,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.proxyUrl using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(134,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.userAgent using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(137,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.referer using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(140,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.useDownloadArchive using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(143,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.downloadArchiveFile using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(146,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.useCookiesFile using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(149,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.cookiesFilePath using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(152,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.useCookiesFromBrowser using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(155,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.cookiesFromBrowser using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(158,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.formatSort using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(161,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.sponsorBlockMark using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(164,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.sponsorBlockMarkCategories using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(167,18): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.sponsorBlockRemove using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(170,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.sponsorBlockRemoveCategories using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(173,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.extraArguments using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(176,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.currentProgress using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(179,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.currentStatus using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(182,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.currentTitle using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(185,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.currentSpeed using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(188,20): warning MVVMTK0045: The field YtDlpGUI.ViewModels.DownloadComposerViewModel.currentEta using [ObservableProperty] will generate code that is not AOT compatible in WinRT scenarios (such as UWP XAML and WinUI 3 apps), and a partial property should be used instead (as it allows the CsWinRT generators to correctly produce the necessary WinRT marshalling code) (https://aka.ms/mvvmtoolkit/errors/mvvmtk0045) [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+  YtDlpGUI -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\bin\Release\net8.0-windows10.0.19041.0\win-x64\YtDlpGUI.dll
+  YtDlpGUI -> D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\
+Bundling yt-dlp engine from https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+Bundling ffmpeg binaries from https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
+Running: C:\Users\NitroDiesel\AppData\Local\Programs\\Inno Setup 6\\ISCC.exe /DAppVersion=0.1.1 /DRuntime=win-x64 /DSourceDir="D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64" /DOutputDir="D:\Coding 2.0\yt-dlp-master\artifacts\installer" D:\Coding 2.0\yt-dlp-master\installer\inno\YtDlpGUI.iss
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.7.1
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Users\NitroDiesel\AppData\Local\Programs\Inno Setup 6\ISPPBuiltins.iss
+Parsing [Setup] section, line 57
+Parsing [Setup] section, line 58
+Parsing [Setup] section, line 59
+Parsing [Setup] section, line 60
+Parsing [Setup] section, line 61
+Parsing [Setup] section, line 62
+Parsing [Setup] section, line 63
+Parsing [Setup] section, line 64
+Parsing [Setup] section, line 65
+Parsing [Setup] section, line 66
+Parsing [Setup] section, line 67
+Parsing [Setup] section, line 68
+Parsing [Setup] section, line 69
+Parsing [Setup] section, line 70
+Parsing [Setup] section, line 71
+Parsing [Setup] section, line 72
+Parsing [Setup] section, line 73
+Parsing [Setup] section, line 74
+Parsing [Setup] section, line 75
+Parsing [Setup] section, line 76
+Parsing [Setup] section, line 77
+Parsing [Setup] section, line 78
+Parsing [Setup] section, line 79
+Parsing [Setup] section, line 80
+Parsing [Setup] section, line 81
+Parsing [Setup] section, line 82
+Parsing [Setup] section, line 83
+Parsing [Setup] section, line 84
+Parsing [Setup] section, line 85
+Parsing [Setup] section, line 86
+Parsing [Setup] section, line 87
+Parsing [Setup] section, line 88
+Parsing [Setup] section, line 89
+Parsing [Setup] section, line 90
+Parsing [Setup] section, line 91
+Parsing [Setup] section, line 92
+Reading file (LicenseFile)
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+Parsing [Languages] section, line 95
+   Reading file: C:\Users\NitroDiesel\AppData\Local\Programs\Inno Setup 6\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 95
+   Reading file: C:\Users\NitroDiesel\AppData\Local\Programs\Inno Setup 6\Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Tasks] section, line 98
+Parsing [Icons] section, line 104
+Parsing [Icons] section, line 105
+Parsing [Icons] section, line 106
+Parsing [Run] section, line 109
+Parsing [Files] section, line 101
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\clretwrc.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\clrgc.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\clrjit.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\CommunityToolkit.Mvvm.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\coreclr.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\CoreMessagingXP.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\createdump.exe
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\dcompi.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\DirectML.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\dwmcorei.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\DwmSceneI.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\DWriteCore.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ffmpeg.exe
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ffprobe.exe
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hostfxr.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hostpolicy.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\marshal.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.CSharp.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.DiaSymReader.Native.amd64.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.DirectManipulation.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.Abstractions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.Binder.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.CommandLine.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.FileExtensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.Json.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Configuration.UserSecrets.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.DependencyInjection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Diagnostics.Abstractions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Diagnostics.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.FileProviders.Abstractions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.FileProviders.Physical.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.FileSystemGlobbing.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Hosting.Abstractions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Hosting.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.Abstractions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.Configuration.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.Console.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.Debug.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.EventLog.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Logging.EventSource.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Options.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Extensions.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Foundation.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.Display.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.Imaging.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.Imaging.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.Imaging.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.ImagingInternal.ImageObjectRemover.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.ImagingInternal.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.Internal.Imaging.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Graphics.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.InputStateManager.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.InteractiveExperiences.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Internal.FrameworkUdk.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Security.Authentication.OAuth.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Security.Authentication.OAuth.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Composition.OSSupport.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Designer.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Input.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.pri
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Text.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Windowing.Core.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Windowing.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml.Controls.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml.Controls.pri
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.ui.xaml.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml.Internal.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml.Phone.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.ui.xaml.resources.19h1.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.ui.xaml.resources.common.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.VisualBasic.Core.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.VisualBasic.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Web.WebView2.Core.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Web.WebView2.Core.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Win32.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Win32.Registry.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.ContentModerationInternal.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.ContentSafety.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.ContentSafety.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.ContentSafety.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Foundation.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.FoundationInternal.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.GenerativeInternal.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Imaging.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Imaging.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Imaging.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.MachineLearning.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.MachineLearning.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Text.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Text.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.Text.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AI.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Background.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Background.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.DynamicDependency.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Resources.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.Resources.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AppLifecycle.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AppLifecycle.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AppNotifications.Builder.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AppNotifications.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.AppNotifications.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.BadgeNotifications.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.BadgeNotifications.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Foundation.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Globalization.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Internal.Vision.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Management.Deployment.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Management.Deployment.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Media.Capture.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Media.Capture.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Private.Workloads.SessionManager.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.PrivateCommon.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.PushNotifications.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.PushNotifications.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.SDK.NET.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Security.AccessControl.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Security.AccessControl.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.SemanticSearch.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Storage.Pickers.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Storage.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Storage.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.System.Power.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.System.Power.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.System.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.System.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Vision.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.VisionInternal.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Widgets.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Widgets.Projection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Widgets.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Workloads.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Workloads.Resources.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Workloads.Resources_ec.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.Windows.Workloads.winmd
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.WindowsAppRuntime.Bootstrap.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.WindowsAppRuntime.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.WindowsAppRuntime.Insights.Resource.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.WindowsAppRuntime.pri
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.WinUI.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\MRM.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mscordaccore.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mscordaccore_amd64_amd64_8.0.2526.11203.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mscordbi.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mscorlib.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mscorrc.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\msquic.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\netstandard.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\onnxruntime.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\onnxruntime_providers_shared.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\PushNotificationsLongRunningTask.ProxyStub.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\resources.pri
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\RestartAgent.exe
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\SessionHandleIPCProxyStub.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.AppContext.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Buffers.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Collections.Concurrent.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Collections.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Collections.Immutable.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Collections.NonGeneric.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Collections.Specialized.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ComponentModel.Annotations.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ComponentModel.DataAnnotations.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ComponentModel.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ComponentModel.EventBasedAsync.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ComponentModel.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ComponentModel.TypeConverter.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Configuration.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Console.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Core.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Data.Common.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Data.DataSetExtensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Data.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.Contracts.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.Debug.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.DiagnosticSource.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.EventLog.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.EventLog.Messages.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.FileVersionInfo.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.Process.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.StackTrace.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.TextWriterTraceListener.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.Tools.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.TraceSource.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Diagnostics.Tracing.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Drawing.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Drawing.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Dynamic.Runtime.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Formats.Asn1.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Formats.Tar.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Globalization.Calendars.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Globalization.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Globalization.Extensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Compression.Brotli.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Compression.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Compression.FileSystem.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Compression.Native.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Compression.ZipFile.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.FileSystem.AccessControl.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.FileSystem.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.FileSystem.DriveInfo.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.FileSystem.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.FileSystem.Watcher.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.IsolatedStorage.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.MemoryMappedFiles.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Pipelines.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Pipes.AccessControl.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.Pipes.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.IO.UnmanagedMemoryStream.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Linq.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Linq.Expressions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Linq.Parallel.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Linq.Queryable.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Memory.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Http.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Http.Json.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.HttpListener.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Mail.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.NameResolution.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.NetworkInformation.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Ping.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Quic.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Requests.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Security.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.ServicePoint.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.Sockets.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.WebClient.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.WebHeaderCollection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.WebProxy.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.WebSockets.Client.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Net.WebSockets.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Numerics.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Numerics.Vectors.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ObjectModel.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Private.CoreLib.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Private.DataContractSerialization.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Private.Uri.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Private.Xml.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Private.Xml.Linq.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.DispatchProxy.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.Emit.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.Emit.ILGeneration.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.Emit.Lightweight.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.Extensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.Metadata.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Reflection.TypeExtensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Resources.Reader.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Resources.ResourceManager.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Resources.Writer.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.CompilerServices.Unsafe.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.CompilerServices.VisualC.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Extensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Handles.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.InteropServices.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.InteropServices.JavaScript.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.InteropServices.RuntimeInformation.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Intrinsics.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Loader.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Numerics.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Serialization.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Serialization.Formatters.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Serialization.Json.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Serialization.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Runtime.Serialization.Xml.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.AccessControl.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Claims.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.Algorithms.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.Cng.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.Csp.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.Encoding.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.OpenSsl.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.Primitives.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Cryptography.X509Certificates.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Principal.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.Principal.Windows.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Security.SecureString.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ServiceModel.Web.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ServiceProcess.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Text.Encoding.CodePages.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Text.Encoding.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Text.Encoding.Extensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Text.Encodings.Web.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Text.Json.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Text.RegularExpressions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Channels.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Overlapped.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Tasks.Dataflow.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Tasks.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Tasks.Extensions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Tasks.Parallel.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Thread.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.ThreadPool.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Threading.Timer.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Transactions.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Transactions.Local.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.ValueTuple.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Web.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Web.HttpUtility.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Windows.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.Linq.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.ReaderWriter.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.Serialization.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.XDocument.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.XmlDocument.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.XmlSerializer.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.XPath.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\System.Xml.XPath.XDocument.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WebView2Loader.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WindowsAppRuntime.DeploymentExtensions.OneCore.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WindowsAppRuntime.png
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WindowsAppSdk.AppxDeploymentExtensions.Desktop-EventLog-Instrumentation.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WindowsAppSdk.AppxDeploymentExtensions.Desktop.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WindowsBase.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WinRT.Runtime.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\WinUIEdit.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\workloads.365.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\workloads.j32.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\workloads.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\workloads.lnl.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\workloads.qnn.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\workloads.stx.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\wuceffectsi.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\yt-dlp.exe
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.Core.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.Core.pdb
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.deps.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.exe
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.Infrastructure.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.Infrastructure.pdb
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.pdb
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\YtDlpGUI.runtimeconfig.json
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\af-ZA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\af-ZA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\am-ET\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\am-ET\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ar-SA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ar-SA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\as-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\as-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Assets\ytdlpgui.ico
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\az-Latn-AZ\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\az-Latn-AZ\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\bg-BG\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\bg-BG\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\bn-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\bn-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\bs-Latn-BA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\bs-Latn-BA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ca-ES\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ca-ES\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ca-Es-VALENCIA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ca-Es-VALENCIA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\cs-CZ\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\cs-CZ\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\cy-GB\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\cy-GB\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\da-DK\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\da-DK\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\de-DE\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\de-DE\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\el-GR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\el-GR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\en-GB\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\en-GB\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\en-us\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\en-us\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\es-ES\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\es-ES\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\es-MX\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\es-MX\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\et-EE\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\et-EE\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\eu-ES\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\eu-ES\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fa-IR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fa-IR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fi-FI\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fi-FI\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fil-PH\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fil-PH\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fr-CA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fr-CA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fr-FR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\fr-FR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ga-IE\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ga-IE\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\gd-gb\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\gd-gb\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\gl-ES\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\gl-ES\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\gu-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\gu-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\he-IL\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\he-IL\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hi-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hi-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hr-HR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hr-HR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hu-HU\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hu-HU\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hy-AM\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\hy-AM\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\id-ID\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\id-ID\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\is-IS\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\is-IS\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\it-IT\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\it-IT\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ja-JP\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ja-JP\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ka-GE\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ka-GE\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\kk-KZ\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\kk-KZ\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\km-KH\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\km-KH\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\kn-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\kn-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ko-KR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ko-KR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\kok-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\kok-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lb-LU\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lb-LU\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lo-LA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lo-LA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lt-LT\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lt-LT\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lv-LV\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\lv-LV\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mi-NZ\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mi-NZ\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml\Assets\map.html
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\Microsoft.UI.Xaml\Assets\NoiseAsset_256x256_PNG.png
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mk-MK\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mk-MK\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ml-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ml-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mr-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mr-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ms-MY\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ms-MY\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mt-MT\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\mt-MT\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\nb-NO\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\nb-NO\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ne-NP\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ne-NP\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\nl-NL\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\nl-NL\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\nn-NO\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\nn-NO\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\NpuDetect\NPUDetect.dll
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\or-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\or-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pa-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pa-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pl-PL\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pl-PL\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pt-BR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pt-BR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pt-PT\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\pt-PT\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\quz-PE\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\quz-PE\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ro-RO\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ro-RO\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ru-RU\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ru-RU\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sk-SK\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sk-SK\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sl-SI\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sl-SI\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sq-AL\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sq-AL\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sr-Cyrl-BA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sr-Cyrl-BA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sr-Cyrl-RS\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sr-Cyrl-RS\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sr-Latn-RS\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sr-Latn-RS\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sv-SE\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\sv-SE\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ta-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ta-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\te-IN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\te-IN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\th-TH\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\th-TH\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\tr-TR\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\tr-TR\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\tt-RU\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\tt-RU\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ug-CN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ug-CN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\uk-UA\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\uk-UA\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ur-PK\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\ur-PK\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\uz-Latn-UZ\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\uz-Latn-UZ\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\vi-VN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\vi-VN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\zh-CN\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\zh-CN\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\zh-TW\Microsoft.ui.xaml.dll.mui
+   Compressing: D:\Coding 2.0\yt-dlp-master\artifacts\publish\win-x64\\zh-TW\Microsoft.UI.Xaml.Phone.dll.mui
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+
+Successful compile (131.843 sec). Resulting Setup program filename is:
+D:\Coding 2.0\yt-dlp-master\artifacts\installer\yt-dlp-desktop-0.1.1-win-x64-setup.exe
+Installer artifacts:
+ - D:\Coding 2.0\yt-dlp-master\artifacts\installer\yt-dlp-desktop-0.1.1-win-x64-setup.exe
+ - D:\Coding 2.0\yt-dlp-master\artifacts\installer\yt-dlp-desktop-0.1.0-win-x64-setup.exe

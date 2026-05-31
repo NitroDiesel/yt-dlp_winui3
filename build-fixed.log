@@ -1,0 +1,25 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  YtDlpGUI.Core -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Core\bin\Release\net8.0\YtDlpGUI.Core.dll
+  YtDlpGUI.Infrastructure -> D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI.Infrastructure\bin\Release\net8.0\YtDlpGUI.Infrastructure.dll
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(210,13): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(229,28): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(246,26): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(357,13): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(375,28): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(400,26): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+C:\Users\NitroDiesel\.nuget\packages\microsoft.windowsappsdk\1.7.260224002\buildTransitive\Microsoft.UI.Xaml.Markup.Compiler.interop.targets(845,9): error MSB3073: The command ""C:\Users\NitroDiesel\.nuget\packages\microsoft.windowsappsdk\1.7.260224002\buildTransitive\..\tools\net6.0\..\net472\XamlCompiler.exe" "obj\Release\net8.0-windows10.0.19041.0\\input.json" "obj\Release\net8.0-windows10.0.19041.0\\output.json"" exited with code 1. [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+
+Build FAILED.
+
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(210,13): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(229,28): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\AddDownloadDialogViewModel.cs(246,26): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(357,13): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(375,28): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\ViewModels\DownloadComposerViewModel.cs(400,26): error CS0103: The name 'IsCustomVideoQuality' does not exist in the current context [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+C:\Users\NitroDiesel\.nuget\packages\microsoft.windowsappsdk\1.7.260224002\buildTransitive\Microsoft.UI.Xaml.Markup.Compiler.interop.targets(845,9): error MSB3073: The command ""C:\Users\NitroDiesel\.nuget\packages\microsoft.windowsappsdk\1.7.260224002\buildTransitive\..\tools\net6.0\..\net472\XamlCompiler.exe" "obj\Release\net8.0-windows10.0.19041.0\\input.json" "obj\Release\net8.0-windows10.0.19041.0\\output.json"" exited with code 1. [D:\Coding 2.0\yt-dlp-master\src\YtDlpGUI\YtDlpGUI.csproj]
+    0 Warning(s)
+    7 Error(s)
+
+Time Elapsed 00:00:13.75

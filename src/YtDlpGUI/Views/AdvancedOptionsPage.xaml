@@ -1,0 +1,96 @@
+<Page
+    x:Class="YtDlpGUI.Views.AdvancedOptionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer>
+        <StackPanel Padding="20,8,20,20" Spacing="16">
+            <Border Style="{StaticResource CardBorderStyle}">
+                <StackPanel Spacing="12">
+                    <TextBlock Style="{StaticResource SectionTitleStyle}" Text="Advanced Options" />
+                    <TextBlock Opacity="0.7" Text="Tune download behavior without cluttering the main flow." TextWrapping="Wrap" />
+
+                    <Expander Header="Format and Playlist" IsExpanded="True">
+                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                            <TextBlock Opacity="0.75" Text="These controls are applied when Quick Download quality is set to Custom." TextWrapping="Wrap" />
+                            <TextBlock Text="Custom quality format selector (-f)" />
+                            <TextBox Text="{Binding CustomFormat, Mode=TwoWay}" PlaceholderText="Example: bv*+ba/b" />
+                            <TextBlock Text="Custom quality format sort (-S)" />
+                            <TextBox Text="{Binding FormatSort, Mode=TwoWay}" PlaceholderText="Example: res:1080,fps,hdr:12" />
+                            <TextBlock Text="Playlist mode" />
+                            <ComboBox
+                                ItemsSource="{Binding PlaylistModes}"
+                                SelectedItem="{Binding SelectedPlaylistMode, Mode=TwoWay}" />
+                        </StackPanel>
+                    </Expander>
+
+                    <Expander Header="Subtitles and Postprocessing" IsExpanded="False">
+                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                            <TextBlock Text="Subtitle languages" />
+                            <TextBox Text="{Binding SubtitleLanguages, Mode=TwoWay}" PlaceholderText="en.*,ja" />
+                            <TextBlock Text="Subtitle format" />
+                            <TextBox Text="{Binding SubtitleFormat, Mode=TwoWay}" PlaceholderText="srt/best" />
+
+                            <ToggleSwitch Header="Embed chapters" IsOn="{Binding EmbedChapters, Mode=TwoWay}" />
+                            <ToggleSwitch Header="SponsorBlock mark" IsOn="{Binding SponsorBlockMark, Mode=TwoWay}" />
+                            <TextBox Text="{Binding SponsorBlockMarkCategories, Mode=TwoWay}" PlaceholderText="default" />
+                            <ToggleSwitch Header="SponsorBlock remove" IsOn="{Binding SponsorBlockRemove, Mode=TwoWay}" />
+                            <TextBox Text="{Binding SponsorBlockRemoveCategories, Mode=TwoWay}" PlaceholderText="default" />
+                        </StackPanel>
+                    </Expander>
+
+                    <Expander Header="Network and Retries" IsExpanded="False">
+                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                            <TextBlock Text="Retries" />
+                            <NumberBox Minimum="1" SpinButtonPlacementMode="Inline" Value="{Binding Retries, Mode=TwoWay}" />
+                            <TextBlock Text="Rate limit (--limit-rate)" />
+                            <TextBox Text="{Binding RateLimit, Mode=TwoWay}" PlaceholderText="2M" />
+                            <TextBlock Text="Proxy (--proxy)" />
+                            <TextBox Text="{Binding ProxyUrl, Mode=TwoWay}" PlaceholderText="http://127.0.0.1:8080" />
+                            <TextBlock Text="User-Agent (--user-agent)" />
+                            <TextBox Text="{Binding UserAgent, Mode=TwoWay}" PlaceholderText="Mozilla/5.0 ..." />
+                            <TextBlock Text="Referer (--referer)" />
+                            <TextBox Text="{Binding Referer, Mode=TwoWay}" PlaceholderText="https://example.com/" />
+                        </StackPanel>
+                    </Expander>
+
+                    <Expander Header="Archive and Authentication" IsExpanded="False">
+                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                            <ToggleSwitch Header="Use download archive" IsOn="{Binding UseDownloadArchive, Mode=TwoWay}" />
+                            <Grid ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Column="0" Text="{Binding DownloadArchiveFile, Mode=TwoWay}" />
+                                <Button Grid.Column="1" Command="{Binding BrowseArchiveFileCommand}" Content="Browse" />
+                            </Grid>
+
+                            <ToggleSwitch Header="Use cookies file" IsOn="{Binding UseCookiesFile, Mode=TwoWay}" />
+                            <Grid ColumnSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Column="0" Text="{Binding CookiesFilePath, Mode=TwoWay}" />
+                                <Button Grid.Column="1" Command="{Binding BrowseCookiesFileCommand}" Content="Browse" />
+                            </Grid>
+
+                            <ToggleSwitch Header="Use cookies from browser" IsOn="{Binding UseCookiesFromBrowser, Mode=TwoWay}" />
+                            <TextBox Text="{Binding CookiesFromBrowser, Mode=TwoWay}" PlaceholderText="chrome|edge|firefox[:profile]" />
+                        </StackPanel>
+                    </Expander>
+
+                    <Expander Header="Expert" IsExpanded="False">
+                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                            <TextBlock Text="Extra arguments (advanced escape hatch)" />
+                            <TextBox AcceptsReturn="True" MinHeight="80" Text="{Binding ExtraArguments, Mode=TwoWay}" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

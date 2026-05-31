@@ -1,0 +1,199 @@
+<Page
+    x:Class="YtDlpGUI.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer>
+        <StackPanel Padding="20,8,20,20" Spacing="16">
+            <Border Style="{StaticResource CardBorderStyle}">
+                <StackPanel Spacing="12">
+                    <TextBlock Style="{StaticResource SectionTitleStyle}" Text="Preferences" />
+
+                    <TabView IsAddTabButtonVisible="False">
+                        <TabViewItem Header="Basic" IsClosable="False">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <StackPanel Padding="12" Spacing="12">
+                                    <TextBlock FontSize="18" FontWeight="SemiBold" Text="Download Defaults" />
+
+                                    <TextBlock Text="Default output directory" />
+                                    <Grid ColumnSpacing="8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox Grid.Column="0" Text="{Binding DefaultOutputDirectory, Mode=TwoWay}" />
+                                        <Button Grid.Column="1" Command="{Binding BrowseDefaultOutputFolderCommand}" Content="Browse" />
+                                    </Grid>
+
+                                    <TextBlock Text="Default filename template" />
+                                    <TextBox Text="{Binding DefaultOutputTemplate, Mode=TwoWay}" />
+
+                                    <Grid ColumnSpacing="12">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Spacing="4">
+                                            <TextBlock Text="Default mode" />
+                                            <ComboBox ItemsSource="{Binding DownloadModes}" SelectedItem="{Binding DefaultDownloadMode, Mode=TwoWay}">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding Converter={StaticResource EnumDisplayNameConverter}}" />
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Spacing="4">
+                                            <TextBlock Text="Default quality" />
+                                            <ComboBox ItemsSource="{Binding QualityPresets}" SelectedItem="{Binding DefaultQualityPreset, Mode=TwoWay}">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding Converter={StaticResource EnumDisplayNameConverter}}" />
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="2" Spacing="4">
+                                            <TextBlock Text="Default retries" />
+                                            <NumberBox Minimum="1" SpinButtonPlacementMode="Inline" Value="{Binding DefaultRetries, Mode=TwoWay}" />
+                                        </StackPanel>
+                                    </Grid>
+
+                                    <ToggleSwitch Header="Default download subtitles" IsOn="{Binding DefaultDownloadSubtitles, Mode=TwoWay}" />
+                                    <ToggleSwitch Header="Default auto subtitles" IsOn="{Binding DefaultDownloadAutoSubtitles, Mode=TwoWay}" />
+                                    <ToggleSwitch Header="Default embed subtitles" IsOn="{Binding DefaultEmbedSubtitles, Mode=TwoWay}" />
+                                    <ToggleSwitch Header="Default embed metadata" IsOn="{Binding DefaultEmbedMetadata, Mode=TwoWay}" />
+                                    <ToggleSwitch Header="Default embed thumbnail" IsOn="{Binding DefaultEmbedThumbnail, Mode=TwoWay}" />
+
+                                    <TextBlock FontSize="18" FontWeight="SemiBold" Margin="0,12,0,0" Text="Queue and Add Download Behavior" />
+                                    <ToggleSwitch Header="Auto-start queue when jobs are enqueued" IsOn="{Binding AutoStartQueue, Mode=TwoWay}" />
+                                    <ToggleSwitch Header="Auto-fill Add Download dialog from clipboard" IsOn="{Binding AutoFillAddDialogFromClipboard, Mode=TwoWay}" />
+                                    <ToggleSwitch Header="Start queue immediately when submitting Add Download dialog" IsOn="{Binding StartQueueAfterAddDialogSubmit, Mode=TwoWay}" />
+                                </StackPanel>
+                            </ScrollViewer>
+                        </TabViewItem>
+
+                        <TabViewItem Header="Advanced" IsClosable="False">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <StackPanel Padding="12" Spacing="12">
+                                    <Expander Header="Engine Paths" IsExpanded="True">
+                                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                                            <ToggleSwitch Header="Run via Python module (python -m yt_dlp)" IsOn="{Binding UsePythonModule, Mode=TwoWay}" />
+
+                                            <TextBlock Text="yt-dlp executable path" />
+                                            <Grid ColumnSpacing="8">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBox Grid.Column="0" Text="{Binding YtDlpExecutablePath, Mode=TwoWay}" />
+                                                <Button Grid.Column="1" Command="{Binding BrowseYtDlpExecutableCommand}" Content="Browse" />
+                                            </Grid>
+
+                                            <TextBlock Text="Python executable path" />
+                                            <Grid ColumnSpacing="8">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBox Grid.Column="0" Text="{Binding PythonExecutablePath, Mode=TwoWay}" />
+                                                <Button Grid.Column="1" Command="{Binding BrowsePythonExecutableCommand}" Content="Browse" />
+                                            </Grid>
+
+                                            <TextBlock Text="ffmpeg path (optional)" />
+                                            <Grid ColumnSpacing="8">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBox Grid.Column="0" Text="{Binding FfmpegLocation, Mode=TwoWay}" />
+                                                <Button Grid.Column="1" Command="{Binding BrowseFfmpegExecutableCommand}" Content="Browse" />
+                                            </Grid>
+                                        </StackPanel>
+                                    </Expander>
+
+                                    <Expander Header="Network and Authentication Defaults" IsExpanded="False">
+                                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                                            <TextBlock Text="Default rate limit" />
+                                            <TextBox Text="{Binding DefaultRateLimit, Mode=TwoWay}" PlaceholderText="2M" />
+                                            <TextBlock Text="Default proxy" />
+                                            <TextBox Text="{Binding DefaultProxy, Mode=TwoWay}" PlaceholderText="http://127.0.0.1:8080" />
+                                            <TextBlock Text="Default user-agent" />
+                                            <TextBox Text="{Binding DefaultUserAgent, Mode=TwoWay}" PlaceholderText="Mozilla/5.0 ..." />
+                                            <TextBlock Text="Default referer" />
+                                            <TextBox Text="{Binding DefaultReferer, Mode=TwoWay}" PlaceholderText="https://example.com/" />
+
+                                            <ToggleSwitch Header="Use download archive by default" IsOn="{Binding DefaultUseDownloadArchive, Mode=TwoWay}" />
+                                            <Grid ColumnSpacing="8">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBox
+                                                    Grid.Column="0"
+                                                    IsEnabled="{Binding DefaultUseDownloadArchive}"
+                                                    Text="{Binding DefaultDownloadArchivePath, Mode=TwoWay}"
+                                                    PlaceholderText="C:\Downloads\archive.txt" />
+                                                <Button
+                                                    Grid.Column="1"
+                                                    Command="{Binding BrowseArchiveFileCommand}"
+                                                    Content="Browse"
+                                                    IsEnabled="{Binding DefaultUseDownloadArchive}" />
+                                            </Grid>
+
+                                            <ToggleSwitch Header="Use browser cookies by default" IsOn="{Binding DefaultUseCookiesFromBrowser, Mode=TwoWay}" />
+                                            <TextBox
+                                                IsEnabled="{Binding DefaultUseCookiesFromBrowser}"
+                                                Text="{Binding DefaultCookiesFromBrowser, Mode=TwoWay}"
+                                                PlaceholderText="chrome|edge|firefox[:profile]" />
+
+                                            <ToggleSwitch Header="Use cookies file by default" IsOn="{Binding DefaultUseCookiesFile, Mode=TwoWay}" />
+                                            <Grid ColumnSpacing="8">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <TextBox
+                                                    Grid.Column="0"
+                                                    IsEnabled="{Binding DefaultUseCookiesFile}"
+                                                    Text="{Binding DefaultCookiesFilePath, Mode=TwoWay}"
+                                                    PlaceholderText="C:\cookies.txt" />
+                                                <Button
+                                                    Grid.Column="1"
+                                                    Command="{Binding BrowseCookiesFileCommand}"
+                                                    Content="Browse"
+                                                    IsEnabled="{Binding DefaultUseCookiesFile}" />
+                                            </Grid>
+                                        </StackPanel>
+                                    </Expander>
+
+                                    <Expander Header="Developer and Logging" IsExpanded="False">
+                                        <StackPanel Margin="0,8,0,0" Spacing="8">
+                                            <ToggleSwitch Header="Verbose yt-dlp logging" IsOn="{Binding VerboseLogging, Mode=TwoWay}" />
+                                            <TextBlock Text="Default extra arguments (applied to new jobs)" />
+                                            <TextBox
+                                                AcceptsReturn="True"
+                                                MinHeight="90"
+                                                Text="{Binding DefaultExtraArguments, Mode=TwoWay}"
+                                                TextWrapping="Wrap"
+                                                PlaceholderText="Example: --restrict-filenames --compat-options no-youtube-unavailable-videos" />
+                                        </StackPanel>
+                                    </Expander>
+                                </StackPanel>
+                            </ScrollViewer>
+                        </TabViewItem>
+                    </TabView>
+
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <Button Command="{Binding SaveSettingsCommand}" Content="Save Settings" Style="{StaticResource PrimaryActionButtonStyle}" />
+                        <Button Command="{Binding ReloadSettingsCommand}" Content="Discard Changes" />
+                        <TextBlock Margin="12,4,0,0" Text="{Binding StatusMessage}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

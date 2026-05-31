@@ -1,0 +1,14 @@
+* text=auto
+
+Makefile* text whitespace=-tab-in-indent
+*.sh text eol=lf
+*.md diff=markdown
+*.py diff=python
+
+# Keep WinUI/.NET files consistent on Windows and avoid mixed line endings
+src/YtDlpGUI*/**/*.cs text eol=crlf
+src/YtDlpGUI*/**/*.xaml text eol=crlf
+src/YtDlpGUI*/**/*.csproj text eol=crlf
+src/YtDlpGUI*/**/*.props text eol=crlf
+src/YtDlpGUI*/**/*.targets text eol=crlf
+*.sln text eol=crlf
