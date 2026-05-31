@@ -12,7 +12,7 @@ from ..utils import (
 class StacommuBaseIE(WrestleUniverseBaseIE):
     _NETRC_MACHINE = 'stacommu'
     _API_HOST = 'api.stacommu.jp'
-    _LOGIN_QUERY = {'key': 'AIzaSyCR9czxhH2eWuijEhTNWBZ5MCcOYEUTAhg'}
+    _LOGIN_QUERY = {'key': 'redacted'}
     _LOGIN_HEADERS = {
         'Accept': '*/*',
         'Content-Type': 'application/json',
